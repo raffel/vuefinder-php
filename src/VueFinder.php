@@ -39,7 +39,8 @@ class VueFinder
 
         $this->request = Request::createFromGlobals();
 
-        $this->adapterKey = $this->request->get('adapter');
+//        $this->adapterKey = $this->request->get('adapter');
+        $this->adapterKey = array_keys($storages)[0];
 
         if (!$this->adapterKey || !in_array($this->adapterKey, array_keys($storages)) ) {
             $this->adapterKey = array_keys($storages)[0];
