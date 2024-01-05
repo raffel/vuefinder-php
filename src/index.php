@@ -1,7 +1,7 @@
 <?php
 require '../vendor/autoload.php';
 
-use Ozdemir\VueFinder\Vuefinder;
+use Ozdemir\VueFinder\VueFinder;
 use League\Flysystem\Local\LocalFilesystemAdapter;
 
 $vuefinder = new VueFinder([
