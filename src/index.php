@@ -5,7 +5,7 @@ use Ozdemir\VueFinder\VueFinder;
 use League\Flysystem\Local\LocalFilesystemAdapter;
 
 $vuefinder = new VueFinder([
-  'data' => new LocalFilesystemAdapter('/opt'),
+  'data' => new LocalFilesystemAdapter('/data'),
 ]);
 
 $config = [
